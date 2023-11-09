@@ -12,6 +12,10 @@
      esos valore dentro de los que yo le di y no me los sumara, esto hace que se respeten mis medidas y mi caja no se agrande*/
  }
 
+ .fondoNav {
+     background-color: #353A40;
+ }
+
  /*barra de navegacion - clase del header*/
  .cabecera {
      /*alto de la imagen*/
@@ -76,6 +80,15 @@
      color: white;
      /* background-color: #96C93E;*/
  }
+
+ .navbar-dark .navbar-nav .nav-link.textoBlanco {
+     color: white
+ }
+
+ .navbar-dark .navbar-nav .nav-link.ticketVerde {
+     color: #2D6041;
+ }
+
 
  .div_conferencia_texto {
      height: 280px;
@@ -364,11 +377,11 @@
  }
 
  .pieDePagina {
-     display: flex;
+     /* display: flex;
      justify-content: space-around;
      align-items: center;
      /*centra los elemento de la ul*/
-     height: 80px;
+     height: 15vh;
      /*alto del contenedor*/
      background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
      /*coloque una degrade en el pie de pagina*/
@@ -378,19 +391,77 @@
 
 
  .listaFooter {
-     display: flex;
+     /* display: flex;*/
      list-style: none;
-     align-items: center;
+     /* align-items: center;*/
      /*centra los elementos dentro de su contenedor padre li>*/
  }
 
  footer ul li {
-     color: white;
+     /*color: white;*/
      width: 100px;
-     text-align: center;
+     /*text-align: center;*/
      margin-left: 50px;
      font-family: 'Exo 2', sans-serif;
      font-size: 14px;
+ }
+
+ .navbar-collapse {
+     align-items: center;
+     justify-content: flex-start;
+ }
+
+ .card {
+     margin-top: 25px;
+     margin-bottom: 25px;
+     margin-left: 20px;
+     text-align: center;
+     width: 250px;
+     height: 250px;
+     border-radius: 0;
+ }
+
+ .card:hover {
+     transform: scale(1.1);
+ }
+
+ .color_boton {
+     background-color: #96C93E;
+     border: 1px solid #96C93E;
+ }
+
+ .row {
+     justify-content: center;
+     align-content: center;
+ }
+
+ .section-form {
+     /*background-color: red;*/
+     margin-bottom: 15px;
+ }
+
+ .boton-total {
+     background-color: #CCE5FF;
+ }
+
+
+
+ /*ul {
+   background-color: green;
+}*/
+
+ @media screen and (max-width:700px) {
+     .d-flex {
+         flex-direction: column;
+
+     }
+
+     .card {
+         width: 100vh;
+         height: auto;
+         padding-bottom: 5px;
+
+     }
  }
 
 
@@ -497,7 +568,7 @@
          width: auto;
      }
 
-     .listaFooter {
+     /*.listaFooter {
          flex-direction: column;
          align-items: center;
      }
@@ -505,6 +576,13 @@
      .listaFooter li {
          margin-left: 0;
          margin-top: 10px;
+     }*/
+
+     .pieDePagina {
+         /*flex-direction: column;*/
+         /*text-align: right;*/
+         height: 30vh;
+         width: auto;
      }
 
 

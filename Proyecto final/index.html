@@ -7,31 +7,66 @@
     <title>Proyecto integrador - Daira Urtubey</title>
     <link rel="shortcut icon" href="./favicon.ico" type="imag/x-icon">
     <!--icono de del logo, es el que aparece en la solapa-->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/estilo.css">
+
 </head>
 
 <body>
     <header class="cabecera">
+        <!--
+    <section class="logoNav">
+      <div class="logoytitulo">
+        <img src="./acces/img/codoacodo.png" alt="Logo codo a codo 4.0" loading="lazy">
 
-        <section class="logoNav">
-            <div class="logoytitulo">
-                <img src="./acces/img/codoacodo.png" alt="Logo codo a codo 4.0" loading="lazy">
+        <h2 class="colorBlanco nav_titulo">Conf Bs As</h2>
+      </div>
+      <nav class="navCabecera">
+        <ul class="listaNav">
+          <li class="titulo_lista"><a class="colorBlanco linkNav" href="#conferencia">La Conferencia</a></li>
+          <li class="titulo_lista"><a class="colorGris linkNav" href="#oradores">Los Oradores</a></li>
+          <li class="titulo_lista"><a class="colorGris linkNav" href="#lugarFecha">El lugar y fecha</a></li>
+          <li class="titulo_lista"><a class="colorGris linkNav" href="#formularioOrador">Convertite en
+              orador</a></li>
+          <li class="titulo_lista"><a class="colorVerde linkNav" href="./pages/tickets.html">Comprar
+              tickets</a></li>
+          <!--enlace interno/relativo
+        </ul>
+      </nav>
+    </section>-->
 
+        <nav class="navbar navbar-expand-md navbar-dark fondoNav ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./acces/img/codoacodo.png" alt="Logo codo a codo 4.0"
+                        width="120px" loading="lazy"></a>
                 <h2 class="colorBlanco nav_titulo">Conf Bs As</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button><!--menu hamburguesa-->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link textoBlanco" aria-current="page" href="#conferencia">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#oradores">Los Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lugarFecha">El lugar y fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formularioOrador">Convertite en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ticketVerde" href="./pages/tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-            <nav class="navCabecera">
-                <ul class="listaNav">
-                    <li class="titulo_lista"><a class="colorBlanco linkNav" href="#conferencia">La Conferencia</a></li>
-                    <li class="titulo_lista"><a class="colorGris linkNav" href="#oradores">Los Oradores</a></li>
-                    <li class="titulo_lista"><a class="colorGris linkNav" href="#lugarFecha">El lugar y fecha</a></li>
-                    <li class="titulo_lista"><a class="colorGris linkNav" href="#formularioOrador">Convertite en
-                            orador</a></li>
-                    <li class="titulo_lista"><a class="colorVerde linkNav" href="./pages/tickets.html">Comprar
-                            tickets</a></li>
-                    <!--enlace interno/relativo-->
-                </ul>
-            </nav>
-        </section>
+        </nav>
 
 
         <section class="conferencia" id="conferencia"> <!--este id es para linkear la lista-->
@@ -48,7 +83,7 @@
 
                 <div>
                     <a class="colorBlanco botonOrador" href="">Quiero ser orador</a>
-                    <a class="colorBlanco botonTikets" href="">Comprar tickets</a>
+                    <a class="colorBlanco botonTikets" href="../proyecto final/pages/tickets.html">Comprar tickets</a>
 
                 </div>
             </div>
@@ -184,21 +219,23 @@
         <!--posible pubulicidad-->
     </aside>
 
-    <footer class="pieDePagina">
+    <footer class="pieDePagina text-white">
 
-        <nav>
-            <ul class="listaFooter">
-                <li>Preguntas frecuentes</li>
-                <li>Contactanos</li>
-                <li>Prensa</li>
-                <li>Conferencia</li>
-                <li>Términos y condiciones</li>
-                <li>Privacidad</li>
-                <li>Estudiantes</li>
+        <nav class="conteiner h-100">
+            <ul class="row listaFooter align-items-center justify-content-center h-100">
+                <li class="col-lg">Preguntas frecuentes</li>
+                <li class="col-lg">Contactanos</li>
+                <li class="col-lg">Prensa</li>
+                <li class="col-lg">Conferencia</li>
+                <li class="col-lg">Términos y condiciones</li>
+                <li class="col-lg">Privacidad</li>
+                <li class="col-lg">Estudiantes</li>
             </ul>
         </nav>
 
     </footer>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/script.js"></script>
 
 </body>
 
