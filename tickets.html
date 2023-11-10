@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador - Daira Urtubey</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="imag/x-icon">
+    <!--icono de del logo, es el que aparece en la solapa-->
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="../CSS/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <!--<section class="logoNav">
+            <div class="logoytitulo">
+                <h2 class="colorBlanco nav_titulo">Conf Bs As</h2>
+            </div>
+            <nav class="navCabecera">
+                <ul class="listaNav">
+                    <li class="titulo_lista"><a class="colorBlanco linkNav" href="../index.html">La Conferencia</a>
+                    </li>
+                    <li class="titulo_lista"><a class="colorGris linkNav" href="#oradores">Los Oradores</a></li>
+                    <li class="titulo_lista"><a class="colorGris linkNav" href="#lugarFecha">El lugar y fecha</a></li>
+                    <li class="titulo_lista"><a class="colorGris linkNav" href="#formularioOrador">Convertite en
+                            orador</a></li>
+                    <li class="titulo_lista"><a class="colorVerde linkNav" href="./pages/tickets.html">Comprar
+                            tickets</a></li>
+                    <!--enlace interno/relativo
+                </ul>
+            </nav>
+        </section>-->
+        <nav class="navbar navbar-expand-md navbar-dark fondoNav">
+            <div class="container">
+                <div class="logoytitulo">
+                    <h2 class="colorBlanco nav_titulo">Conf Bs As</h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button><!--menu hamburguesa-->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link textoBlanco" aria-current="page" href="../index.html#conferencia">La
+                                Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#oradores">Los Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#lugarFechas">El lugar y fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#formularioOrador">Convertite en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ticketVerde" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col col-12 card border-primary" style="width: 18rem;">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <h5 class="card-title">Estudiante</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Tiene un descuento</h6>
+                                <p>80%</p>
+                                <small class="fw-light text-muted mt-3">*presentacion documentación</small>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-12 card border-success" style="width: 18rem;">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <h5 class="card-title">Trainee</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Tiene un descuento</h6>
+                                <p>50%</p>
+                                <small class="fw-light text-muted mt-3">*presentacion documentación</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 card border-warning" style="width: 18rem;">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <h5 class="card-title">Junior</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Tiene un descuento</h6>
+                                <p>15%</p>
+                                <small class="fw-light text-muted mt-3">*presentacion documentación</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-form ">
+                <div class=" d-flex justify-content-center">
+                    <h2 class=" titulo_grande text-center ">
+                        <div class="titulo_pequeño text-center">VENTA</div> VALOR DE TICKET $200
+                    </h2>
+                </div>
+                <div class=" container">
+                    <form class=" row g-3 w-75 mx-auto">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre"
+                                required>
+
+                        </div>
+                        <div class="col-md-6 ">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+                                id="apellido" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Correo" id="email"
+                                required>
+                        </div>
+                        <div class="col-md-6 ">
+                            <label for="cantTickets" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" placeholder="cantidad" aria-label="Cantidad"
+                                id="cantTickets" min="1" required>
+                        </div>
+                        <div class="col-md-6 ">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <select id="categoria" class="form-select">
+                                <option value="" selected>--Seleccione--</option>
+                                <option value="0">General</option>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <input id="totalPago" class="form-control boton-total" placeholder="Total a pagar $"
+                                aria-label="totalApagar">
+                        </div>
+                        <div class="col-md-6 ">
+                            <button id="btnBorrar" class="btn btn-primary w-100 color_boton">Borrar</button>
+                        </div>
+                        <div class="col-md-6 ">
+                            <button id="btnResumen" class="btn btn-primary w-100 color_boton">Resumen</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pieDePagina text-white">
+
+            <nav class="container h-100">
+                <ul class="row listaFooter align-items-center justify-content-center h-100">
+                    <li class="col-lg">Preguntas frecuentes</li>
+                    <li class="col-lg">Contactanos</li>
+                    <li class="col-lg">Prensa</li>
+                    <li class="col-lg">Conferencia</li>
+                    <li class="col-lg">Términos y condiciones</li>
+                    <li class="col-lg">Privacidad</li>
+                    <li class="col-lg">Estudiantes</li>
+                </ul>
+            </nav>
+
+        </footer>
+        <script src="../JS/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

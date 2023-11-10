@@ -1,0 +1,604 @@
+ /*reset de propiedades*/
+ /*limpio el margen y el padding de toda la pagina*/
+
+
+ @import url('https://fonts.googleapis.com/css2? family= Exo+2:wght@100;200 & familia = mandali & display=swap');
+
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     /* suponiendo que le doy un alto o/y ancho a mi contenedoe y luego le agrego un padding o border, esta propiedad va a tener en cuenta
+     esos valore dentro de los que yo le di y no me los sumara, esto hace que se respeten mis medidas y mi caja no se agrande*/
+ }
+
+ .fondoNav {
+     background-color: #353A40;
+ }
+
+ /*barra de navegacion - clase del header*/
+ .fondoNav {
+     background-color: #353A40;
+ }
+
+ .cabecera {
+     /*alto de la imagen*/
+     height: 100vh;
+     /*background-image: url(../acces/img/ba1.jpg);*/
+     /*se le coloco un color con tranaparecia a la imagen*/
+     background: linear-gradient(to right, #000000b1, #00000083, #00000065), url(../acces/img/ba1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+
+ }
+
+ /*logo*/
+ .logoNav {
+
+     height: 100PX;
+     display: flex;
+     /*alineo los elementos de la seccion y los coloco en linea*/
+     align-items: center;
+     /*centro el contenido de las seccion*/
+     justify-content: space-around;
+ }
+
+ .logoNav img {
+     height: 100px;
+     width: 200px;
+ }
+
+ .logoytitulo {
+     display: flex;
+     align-items: center;
+ }
+
+ .nav_titulo {
+     font-family: 'Exo 2', sans-serif;
+ }
+
+ .listaNav {
+     display: flex;
+     /*volvio flexible los elementos de la lista y los coloco en fila*/
+     list-style: none;
+     /*le quita la decoracion a la lista*/
+ }
+
+ .titulo_lista {
+     font-family: 'Exo 2', sans-serif;
+
+ }
+
+ .linkNav {
+     text-decoration: none;
+     /* le quito la linea que tiene como decoracion el contenido del anlca*/
+     margin-left: 15px;
+ }
+
+ .conferencia {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     padding-top: 250px;
+     color: white;
+     /* background-color: #96C93E;*/
+ }
+
+ .navbar-dark .navbar-nav .nav-link.textoBlanco {
+     color: white
+ }
+
+ .navbar-dark .navbar-nav .nav-link.ticketVerde {
+     color: #2D6041;
+ }
+
+
+ .div_conferencia_texto {
+     height: 280px;
+     /*background-color: #96C93E;*/
+     display: flex;
+     width: 50%;
+     /*ocupa el 50% de su contendor padre*/
+     flex-direction: column;
+     align-items: flex-end;
+     padding-right: 140px;
+     /*padding-top: 300px;*/
+ }
+
+ .conferencia h1 {
+     width: 100%;
+     margin-bottom: 20px;
+     text-align: right;
+     font-family: 'Mandali', sans-serif;
+     font-size: 40px;
+ }
+
+ .conferencia p {
+     width: 100%;
+     /*width: 35%;*/
+     text-align: right;
+     line-height: 1.5;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 19px;
+     margin-bottom: 30px;
+ }
+
+ .navbar-dark .navbar-nav .nav-link.textoBlanco {
+     color: white
+ }
+
+ .navbar-dark .navbar-nav .nav-link.ticketVerde {
+     color: #2D6041;
+ }
+
+ .colorBlanco {
+     color: white;
+ }
+
+ .colorGris {
+     color: #9B9EA2;
+ }
+
+ .colorVerde {
+     color: #2D6041;
+ }
+
+ .botonOrador {
+     text-decoration: none;
+     border: 1px solid white;
+     border-radius: 5px;
+     padding: 15px;
+     font-family: 'Exo 2', sans-serif;
+ }
+
+ .botonTikets {
+     text-decoration: none;
+     border-radius: 5px;
+     background-color: #29A744;
+     padding: 15px;
+     margin-left: 15px;
+     font-family: 'Exo 2', sans-serif;
+ }
+
+ /*main*/
+ /*oradores*/
+ .oradores {
+     height: 100vh;
+     /*background-color: blue;*/
+     width: 80%;
+     /*centrado horizontal, en el eje de las x*/
+     margin: 0 auto;
+     /*alinea el contenedor*/
+     text-align: center;
+ }
+
+ .oradores h2 {
+     padding-top: 20px;
+ }
+
+ .titulo_pequeño {
+     font-family: 'Exo 2', sans-serif;
+     font-size: 12px;
+     font-weight: 100;
+ }
+
+ .titulo_grande {
+     font-family: 'Exo 2', sans-serif;
+     font-size: 32px;
+ }
+
+ .tarjetas {
+     /*background-color: white;*/
+     border: 1px solid #b4b3b3;
+     border-radius: 5px;
+     width: 30%;
+     height: 80%;
+     /*pongo en linea los elemnto en bloque*/
+     display: inline-block;
+     margin-right: 15px;
+     margin-top: 20px;
+     text-align: left;
+ }
+
+ .tarjetas img {
+     width: 100%;
+     height: 60%;
+     /*la propiedad object-fit ayuda a contener la imagen dentro del contemedor y que no haya desbordamiento */
+     object-fit: contain;
+     object-fit: cover;
+     border-radius: 5px 5px 0px 0px;
+ }
+
+ .cuerpoTarjeta {
+     margin-top: 10px;
+     margin-left: 5px;
+ }
+
+ .cuerpoTarjeta h4 {
+     display: inline-block;
+     border-radius: 5px;
+     margin-right: 5px;
+     padding: 5px;
+ }
+
+
+ .nombreOrador {
+     margin-top: 5px;
+     margin-bottom: 20px;
+     font-family: 'Mandali', sans-serif;
+ }
+
+ .texto_tarjeta {
+     font-family: 'Exo 2', sans-serif;
+     font-size: 12px;
+     line-height: 2;
+
+ }
+
+ .fondoAmarillo {
+     background-color: #FEC106;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 12px;
+ }
+
+ .fondoCeleste {
+     background-color: #17A2B7;
+     color: white;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 12px;
+ }
+
+
+
+ .fondoGris {
+     background-color: #6B757A;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 12px;
+     color: white;
+ }
+
+
+ .fondoRojo {
+     background-color: #DB3543;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 12px;
+     color: white;
+ }
+
+ .lugaryfecha {
+     height: 65vh;
+     display: flex;
+     column-gap: 2px;
+ }
+
+ .lugaryfecha .honolulu {
+     width: 50%;
+     background-image: url(../acces/img/honolulu.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: left;
+ }
+
+ .lugaryfechaTexto {
+     width: 50%;
+     background-color: #353A40;
+     color: white;
+     padding-top: 20px;
+     padding-left: 20px;
+ }
+
+ .lugaryfechaTexto h2 {
+     font-family: 'Mandali', sans-serif;
+     padding-bottom: 20px;
+ }
+
+ .lugaryfechaTexto p {
+     font-family: 'Exo 2', sans-serif;
+     font-size: 14px;
+     padding-bottom: 30px;
+
+ }
+
+ .lugaryfecha_boton {
+     text-decoration: none;
+     border: 1px solid white;
+     border-radius: 5px;
+     font-family: 'Exo 2', sans-serif;
+     color: white;
+     padding: 10px;
+ }
+
+ .formulario {
+     /*background-color: blue;*/
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     padding-top: 30px;
+ }
+
+ .formulario h2 {
+     text-align: center;
+     padding-bottom: 15px;
+ }
+
+ .formulario p {
+     padding-bottom: 15px;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 14px;
+ }
+
+ .div_formulario {
+     width: 50%;
+     /*ocupa de ancho la mitad del contenedor padre*/
+ }
+
+ .form_div_1 {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .div_1_nombre {
+     width: 47%;
+     height: 35px;
+     border: 1px solid #b4b3b3;
+     border-radius: 5px;
+     padding-left: 7px;
+ }
+
+ .div_1_apellido {
+     width: 47%;
+     height: 35px;
+     border: 1px solid #b4b3b3;
+     border-radius: 5px;
+     padding-left: 7px;
+ }
+
+ .form_div_comentario {
+     width: 100%;
+     /*ancho del contnedor padre*/
+     height: 100px;
+     border-radius: 5px;
+     margin-top: 10px;
+     padding-top: 20px;
+     padding-left: 20px;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 20px;
+ }
+
+ .div_formulario p {
+     font-size: 'Exo 2', sans-serif;
+     font-size: 12px;
+     color: #839EB5;
+ }
+
+ .boton_enviar {
+     width: 100%;
+     /*ancho del padre*/
+     height: 45px;
+     /*le di un alto al boton*/
+     border: none;
+     /*le quite el borde que tiene por defecto*/
+     border-radius: 5px;
+     background-color: #96C93E;
+     margin-bottom: 15px;
+     font-size: 18px;
+     color: white;
+ }
+
+ .pieDePagina {
+     /* display: flex;
+     justify-content: space-around;
+     align-items: center;
+     /*centra los elemento de la ul*/
+     height: 15vh;
+     /*alto del contenedor*/
+     background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+     /*coloque una degrade en el pie de pagina*/
+
+ }
+
+
+
+ .listaFooter {
+     /* display: flex;*/
+     list-style: none;
+     /* align-items: center;*/
+     /*centra los elementos dentro de su contenedor padre li>*/
+ }
+
+ footer ul li {
+     /*color: white;*/
+     width: 100px;
+     /*text-align: center;*/
+     margin-left: 50px;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 14px;
+ }
+
+ .navbar-collapse {
+     align-items: center;
+     justify-content: flex-start;
+ }
+
+ .card {
+     margin-top: 25px;
+     margin-bottom: 25px;
+     margin-left: 20px;
+     text-align: center;
+     width: 250px;
+     height: 250px;
+     border-radius: 0;
+ }
+
+ .card:hover {
+     transform: scale(1.1);
+ }
+
+ .color_boton {
+     background-color: #96C93E;
+     border: 1px solid #96C93E;
+ }
+
+ .row {
+     justify-content: center;
+     align-content: center;
+ }
+
+ .section-form {
+     /*background-color: red;*/
+     margin-bottom: 15px;
+ }
+
+ .boton-total {
+     background-color: #CCE5FF;
+ }
+
+
+
+ /*ul {
+   background-color: green;
+}*/
+
+ @media screen and (max-width:700px) {
+     .d-flex {
+         flex-direction: column;
+
+     }
+
+     .card {
+         width: 100vh;
+         height: auto;
+         padding-bottom: 5px;
+
+     }
+ }
+
+
+ @media screen and (max-width:700px) {
+
+
+     .cabecera {
+         height: auto;
+         width: auto;
+
+     }
+
+     .logoNav {
+         height: auto;
+         flex-direction: column;
+         align-items: flex-start;
+
+     }
+
+     .logoNav img {
+         height: 80px;
+         width: 130px;
+         margin-bottom: 5px;
+     }
+
+     .listaNav {
+         flex-direction: column;
+
+     }
+
+     .linkNav {
+         margin-bottom: 5px;
+
+     }
+
+     .conferencia {
+         padding-top: 20px;
+     }
+
+     .div_conferencia_texto {
+         width: auto;
+         padding-right: 20px;
+     }
+
+     .div_conferencia_texto h1 {
+         font-size: 20px;
+     }
+
+     .div_conferencia_texto p {
+         font-size: 12px;
+     }
+
+     .oradores {
+         height: auto;
+         margin-bottom: 20px;
+     }
+
+     .tarjetas {
+         display: flex;
+         flex-direction: column;
+         width: auto;
+         height: auto;
+     }
+
+     .lugaryfecha {
+         flex-direction: column;
+         width: auto;
+     }
+
+     .lugaryfecha .honolulu {
+         height: 50%;
+         width: 100%;
+     }
+
+     .lugaryfechaTexto {
+         height: 50%;
+         width: 100%;
+     }
+
+     .lugaryfecha h2 {
+         font-size: 18px;
+         margin-left: 5px;
+         margin-top: 5px;
+     }
+
+     .lugaryfecha p {
+         font-size: 12px;
+         padding: 5px;
+     }
+
+     .formulario {
+         width: auto;
+         padding-top: 20px;
+     }
+
+     .formuario p {
+         text-align: center;
+     }
+
+
+     .pieDePagina {
+         /*flex-direction: column;*/
+         /*text-align: right;*/
+         height: 30vh;
+         width: auto;
+     }
+
+
+     /*.listaFooter {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .listaFooter li {
+         margin-left: 0;
+         margin-top: 10px;
+     }*/
+
+     .pieDePagina {
+         /*flex-direction: column;*/
+         /*text-align: right;*/
+         height: 30vh;
+         width: auto;
+     }
+
+
+
+ }
